@@ -9,7 +9,9 @@ public class Product {
     private Double price;
 
     public Product(String id, String name, Double price) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        this.id = id;
+        this.name = name;
+        this.price = price;
     }
 
     public String getId() {
@@ -22,5 +24,9 @@ public class Product {
 
     public Double getPrice() {
         return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }
