@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
  */
 public class UserCart implements ICartDetails{
     private List<Product> cartProducts;
-    private double totalPrice;
+    protected double totalPrice;
 
     public UserCart(){
         this.cartProducts = new ArrayList<>();

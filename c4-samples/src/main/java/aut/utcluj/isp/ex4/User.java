@@ -4,13 +4,14 @@ package aut.utcluj.isp.ex4;
  * @author stefan
  */
 public class User {
-    private UserCart userCart;
-    private Double userMoney;
+    protected UserCart userCart;
+    protected Double userMoney;
 
     public User(Double userMoney) {
         this.userMoney = userMoney;
         this.userCart = new UserCart();
     }
+    public User(){}
 
     public UserCart getUserCart() {
         return userCart;
